@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | Itasca Runners Club</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="/assets/logo.png" alt="Itasca Runners Club Logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#runs">Runs</a></li>
+                <li><a href="#oktoberfast">Oktoberfast 5K</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-nav">
+            <a href="https://www.facebook.com/groups/406626270828629" target="_blank" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.strava.com/clubs/1075469" target="_blank" aria-label="Strava">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.477 0 6.175 8.174h4.302z"/></svg>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        {{ content | safe }}
+    </main>
+
+    <footer>
+        <p>Itasca Runners Club<br>P.O. Box 973<br>Itasca, IL 60143-0973</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/groups/406626270828629" target="_blank">Facebook</a> | 
+            <a href="https://www.strava.com/routes/1524428" target="_blank">Strava</a>
+        </div>
+        <p>&copy; 2025 Itasca Runners Club</p>
+    </footer>
+</body>
+</html>
+
