@@ -43,7 +43,7 @@ title: Home
 </section>
 
 <section id="oktoberfast">
-    <h3>The Annual Itasca Oktoberfast 5K Run</h3>
+    <h2>The Annual Itasca Oktoberfast 5K Run</h2>
     <p><em>"Well done Itasca runners, you guys really know how to put on a race" - Past Race Participant</em></p>
     <p>Itasca Runners Club's organizes a 5K run / walk every year in the fall. The chip-timed race follows a fast and scenic neighborhood route through Itasca, Illinois, with a downhill finish into Usher Park.</p>
     <p>For more information and to register, check out the <a href="https://www.itascaoktoberfast5k.org">race website</a>.</p>

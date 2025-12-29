@@ -20,12 +20,17 @@ header {
     z-index: 1000;
 }
 
+a {
+    color: #0E0E26;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .logo a {
     display: flex;
     align-items: center;
     gap: 1rem;
     color: whitesmoke;
-    text-decoration: none;
 }
 
 .logo .name {
@@ -111,12 +116,15 @@ img {
     min-width: 10rem;
     text-align: center;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .button.secondary {
     background: #0E0E26;
     color: whitesmoke;
 }
+
+
 
 /* About Section */
 #about {
@@ -148,10 +156,12 @@ img {
     gap: 2rem;
     justify-content: center;
     margin-top: 2rem;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .run-type {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     background: #f9f9f9;
     padding: 1.5rem;
@@ -184,6 +194,10 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+footer a {
+    color: whitesmoke;
 }
 
 form {
