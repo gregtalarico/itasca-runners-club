@@ -12,7 +12,7 @@ title: Home
 <section id="about">
     <div class="about-content">
         <div class="about-image">
-             <img src="/assets/about-club.avif" alt="Group of runners">
+             <img src="assets/about-club.avif" alt="Group of runners">
         </div>
         <div class="about-text">
             <h2>About The Club</h2>
@@ -28,14 +28,14 @@ title: Home
     <div class="runs-content">
         <div class="run-type">
             <h3>Saturday</h3>
-            <img src="/assets/saturday-run.avif" alt="Saturday run route map">
+            <img src="assets/saturday-run.avif" alt="Saturday run route map">
             <p>The Itasca Runners Saturday morning run starts at <a href="https://www.fullabeans.com/">Fulla Beans Cafe</a> (corner of Irving Park Road and Walnut Street in Itasca). The run begins at 7:00AM.</p>
             <p>The course is essentially an "out and back" run with a small loop at the turnaround (at about the 2-1/2 mile mark). The complete run measures about 5.1 miles long. There are several convenient areas to shorten the run when desired.</p>
             <p>After finishing, most stay for a while at a local breakfast place for stretching, liquids, and conversation!</p>
         </div>
         <div class="run-type">
             <h3>Weekdays</h3>
-            <img src="/assets/weekday-run.avif" alt="Weekday run route map">
+            <img src="assets/weekday-run.avif" alt="Weekday run route map">
             <p>Tuesday and Thursday mornings, members out running, generally follow this course.</p>
             <p>There is no real starting point to this run, people just meet up at different points depending on where they live in town. The basic course is a "lollipop" with the loop on the north side of town and is about 4.5 miles long. Most runners start at the intersection of Catalpa Ave. and Bryn Mawr Ave. at around 6:00AM.</p>
         </div>
@@ -50,7 +50,7 @@ title: Home
 </section>
 
 <section id="contact">
-    <img src="/assets/contact.avif" alt="Runners stretching">
+    <img src="assets/contact.avif" alt="Runners stretching">
     <h2>Contact Us</h2>
     <form name="contact" action="https://formspree.io/f/mgoedzon" method="POST">
         <input type="text" name="name" placeholder="Name" required>
@@ -60,4 +60,3 @@ title: Home
         <button class="button secondary" type="submit">Submit</button>
     </form>
 </section>
-
