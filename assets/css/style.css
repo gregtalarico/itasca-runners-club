@@ -23,7 +23,6 @@ header {
 a {
     color: #0E0E26;
     font-weight: bold;
-    text-decoration: none;
 }
 
 .logo a {
@@ -89,15 +88,15 @@ h1, h2, h3 {
 img {
     max-width: 100%;
     height: auto;
-    margin: 1rem 0;
 }
 
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/hero.avif') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../hero.avif') no-repeat center center/cover;
     padding: 6rem 1rem;
     color: whitesmoke;
     max-width: 100%;
     margin: 0;
+    margin-bottom: 2rem;
 }
 
 .hero h1 {
@@ -124,6 +123,9 @@ img {
     color: whitesmoke;
 }
 
+.button a {
+    text-decoration: none;
+}
 
 
 /* About Section */
@@ -149,6 +151,10 @@ img {
 /* Runs Section */
 #runs {
     max-width: 1200px;
+}
+
+#runs h2 {
+    margin-top: 0;
 }
 
 .runs-content {
@@ -178,6 +184,29 @@ img {
 .run-type img {
     width: 100%;
     border-radius: 4px;
+}
+
+/* Oktoberfast Section */
+#oktoberfast {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../race.avif') no-repeat center center/cover;
+    padding: 6rem 1rem;
+    color: whitesmoke;
+    max-width: 100%;
+    margin: 2rem 0;
+}
+
+#oktoberfast h2 {
+    color: whitesmoke;
+}
+
+#oktoberfast a {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.race-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 @media (max-width: 768px) {
