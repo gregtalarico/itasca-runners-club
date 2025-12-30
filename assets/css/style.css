@@ -14,12 +14,12 @@
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: var(--base-black);
-    font-size: 16px;
+    font-size: 18px;
 }
 
 a {
@@ -133,7 +133,19 @@ section {
 
 h1, h2, h3 {
     color: var(--base-black);
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 700;
 }
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
 
 img {
     max-width: 100%;
@@ -141,7 +153,7 @@ img {
 }
 
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../hero.avif') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.67), rgba(0,0,0,0.67)), url('../hero.avif') no-repeat center center/cover;
     padding: 6rem 1rem;
     color: var(--base-white);
     max-width: 100%;
@@ -171,6 +183,10 @@ img {
 
 #about .about-text {
     flex: 1;
+}
+
+#about h2 {
+    margin-top: 0;
 }
 
 /* Runs Section */
@@ -213,7 +229,7 @@ img {
 
 /* Oktoberfast Section */
 #oktoberfast {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../race.avif') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.67), rgba(0,0,0,0.67)), url('../race.avif') no-repeat center center/cover;
     padding: 6rem 1rem;
     color: var(--base-white);
     max-width: 100%;
