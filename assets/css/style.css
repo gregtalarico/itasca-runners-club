@@ -58,12 +58,12 @@ a.button, a.button:hover {
     text-decoration: none;
 }
 
-a.button:hover, button.button:hover {
+a.button:hover {
     color: var(--base-accent);
     transition: var(--base-nav-transition);
 }
 
-a.button.secondary:hover {
+a.button.secondary:hover, button.button:hover{
     color: var(--base-secondary);
     transition: var(--base-nav-transition);
 }
