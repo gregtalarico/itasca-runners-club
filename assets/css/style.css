@@ -105,6 +105,12 @@ nav a:hover {
     transition: var(--base-nav-transition);
 }
 
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+    }
+}
+
 .social-nav {
     margin-left: auto;
     display: flex;
