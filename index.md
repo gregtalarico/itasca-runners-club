@@ -54,7 +54,7 @@ title: Home
 <section id="contact">
     <img src="assets/contact.avif" alt="Runners stretching">
     <h2>Contact Us</h2>
-    <form name="contact" action="https://formspree.io/f/mgoedzon" method="POST">
+    <form name="contact" action="https://formspree.io/f/mjgvlpnl" method="POST">
         <input type="text" name="name" placeholder="Name" required>
         <input type="email" name="email" placeholder="Email" required>
         <input type="text" name="subject" placeholder="Subject">

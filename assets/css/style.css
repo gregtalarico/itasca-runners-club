@@ -1,15 +1,75 @@
+:root {
+    --base-primary: #0E0E26;
+    --base-secondary: #87CEFA;
+    --base-accent: #C04000;
+    --base-white: whitesmoke;
+    --base-black: #333;
+    --base-gray: #ccc;
+    --base-light-gray: #f9f9f9;
+
+    --base-nav-transition: color 0.3s ease;
+}
+
 /* Reset and Base Styles */
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #333;
+    color: var(--base-black);
     font-size: 16px;
 }
 
+a {
+    color: var(--base-primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    display: inline-block;
+    background: var(--base-white);
+    color: var(--base-primary);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    min-width: 10rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    border: none;
+}
+
+.button.secondary {
+    background: var(--base-primary);
+    color: var(--base-white);
+}
+
+a.button, a.button:hover {
+    text-decoration: none;
+}
+
+a.button:hover, button.button:hover {
+    color: var(--base-accent);
+    transition: var(--base-nav-transition);
+}
+
+a.button.secondary:hover {
+    color: var(--base-secondary);
+    transition: var(--base-nav-transition);
+}
+
 header {
-    background: #0E0E26;
+    background: var(--base-primary);
     padding: 1rem;
     gap: 1rem;
     display: flex;
@@ -18,23 +78,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-}
-
-a {
-    color: #0E0E26;
-    font-weight: bold;
-}
-
-.logo a {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: whitesmoke;
-}
-
-.logo .name {
-    display: flex;
-    flex-direction: column;
 }
 
 .logo img {
@@ -52,9 +95,14 @@ nav ul {
 }
 
 nav a {
-    text-decoration: none;
-    color: whitesmoke;
+    color: var(--base-white);
     font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--base-secondary);
+    text-decoration: none;
+    transition: var(--base-nav-transition);
 }
 
 .social-nav {
@@ -65,13 +113,15 @@ nav a {
 }
 
 .social-nav a {
-    color: whitesmoke;
+    color: var(--base-white);
     display: flex;
     align-items: center;
 }
 
-.social-nav svg {
-    fill: currentColor;
+.social-nav a:hover {
+    color: var(--base-secondary);
+    text-decoration: none;
+    transition: var(--base-nav-transition);
 }
 
 section {
@@ -82,7 +132,7 @@ section {
 }
 
 h1, h2, h3 {
-    color: #222;
+    color: var(--base-black);
 }
 
 img {
@@ -93,40 +143,15 @@ img {
 .hero {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../hero.avif') no-repeat center center/cover;
     padding: 6rem 1rem;
-    color: whitesmoke;
+    color: var(--base-white);
     max-width: 100%;
     margin: 0;
     margin-bottom: 2rem;
 }
 
 .hero h1 {
-    color: whitesmoke;
+    color: var(--base-white);
 }
-
-.button {
-    display: inline-block;
-    background: whitesmoke;
-    color: #0E0E26;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 1rem;
-    margin-top: 1rem;
-    cursor: pointer;
-    min-width: 10rem;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.button.secondary {
-    background: #0E0E26;
-    color: whitesmoke;
-}
-
-.button a {
-    text-decoration: none;
-}
-
 
 /* About Section */
 #about {
@@ -169,7 +194,7 @@ img {
     display: flex;
     flex-direction: column;
     flex: 1;
-    background: #f9f9f9;
+    background: var(--base-light-gray);
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -190,18 +215,13 @@ img {
 #oktoberfast {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../race.avif') no-repeat center center/cover;
     padding: 6rem 1rem;
-    color: whitesmoke;
+    color: var(--base-white);
     max-width: 100%;
     margin: 2rem 0;
 }
 
-#oktoberfast h2 {
-    color: whitesmoke;
-}
-
-#oktoberfast a {
-    color: whitesmoke;
-    text-decoration: underline;
+#oktoberfast h2, #oktoberfast a {
+    color: var(--base-white);
 }
 
 .race-content {
@@ -218,15 +238,15 @@ img {
 }
 
 footer {
-    background: #333;
-    color: whitesmoke;
+    background: var(--base-black);
+    color: var(--base-white);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
 }
 
 footer a {
-    color: whitesmoke;
+    color: var(--base-white);
 }
 
 form {
@@ -239,6 +259,6 @@ form {
 
 input, textarea {
     padding: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--base-gray);
     border-radius: 0.5rem;
 }
